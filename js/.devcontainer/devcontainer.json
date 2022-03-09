@@ -1,0 +1,11 @@
+{
+  "name": "Node",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh"
+  },
+  "extensions": ["esbenp.prettier-vscode"],
+  "remoteUser": "node"
+}

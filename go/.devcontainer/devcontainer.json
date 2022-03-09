@@ -1,0 +1,14 @@
+{
+  "name": "Go",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "go.toolsManagement.autoUpdate": true,
+    "go.gopath": "/go",
+    "go.goroot": "/usr/local/go"
+  },
+  "extensions": ["golang.Go"],
+  "remoteUser": "vscode"
+}

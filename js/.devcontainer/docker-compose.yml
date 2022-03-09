@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VARIANT: 16
+        REMOTE_USER: node # Same as remoteUser in devcontainer.json
+        GLOBAL_PKG: pnpm yarn
+    volumes:
+      - ..:/workspace # Same as workspaceFolder in devcontainer.json
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
+
+  ## Add other service below
+  # mysql:
+  #   image: 'mysql'
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=admin123
